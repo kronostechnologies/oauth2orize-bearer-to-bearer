@@ -1,0 +1,59 @@
+{
+  "name": "oauth2orize-bearer-to-bearer",
+  "version": "2.0.1",
+  "description": "Bearer Token Exchange Middleware for OAuth2orize.",
+  "author": "Kronos Technologies",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "oauth2orize",
+    "oauth",
+    "oauth2",
+    "authn",
+    "authentication",
+    "authz",
+    "authorization",
+    "api",
+    "jwt",
+    "saml2",
+    "json",
+    "xml",
+    "token",
+    "bearer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kronostechnologies/oauth2orize-bearer-to-bearer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kronostechnologies/oauth2orize-bearer-to-bearer/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib/oauth2orize-bearer-to-bearer",
+  "dependencies": {
+    "oauth2orize": "^1.11.0",
+    "utils-merge": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "sinon": "^6.1.0",
+    "sinon-chai": "^3.2.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test",
+    "test:watch": "./node_modules/mocha/bin/mocha --watch test",
+    "test:coverage": "./node_modules/nyc/bin/nyc.js --reporter=lcov --reporter=text ./node_modules/mocha/bin/mocha test"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
