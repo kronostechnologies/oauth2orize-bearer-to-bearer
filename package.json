@@ -1,9 +1,9 @@
 {
   "name": "oauth2orize-bearer-to-bearer",
-  "version": "2.0.1",
+  "version": "1.0.0",
   "description": "Bearer Token Exchange Middleware for OAuth2orize.",
   "author": "Kronos Technologies",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "keywords": [
     "oauth2orize",
     "oauth",
