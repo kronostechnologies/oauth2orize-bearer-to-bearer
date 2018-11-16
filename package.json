@@ -1,8 +1,8 @@
 {
-  "name": "oauth2orize-bearer-to-bearer",
+  "name": "@equisoft/oauth2orize-bearer-to-bearer",
   "version": "1.0.0",
   "description": "Bearer Token Exchange Middleware for OAuth2orize.",
-  "author": "Kronos Technologies",
+  "author": "Equisoft Inc.",
   "license": "MIT",
   "keywords": [
     "oauth2orize",
