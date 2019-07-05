@@ -1,6 +1,6 @@
 {
   "name": "@equisoft/oauth2orize-bearer-to-bearer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Bearer Token Exchange Middleware for OAuth2orize.",
   "author": "Equisoft Inc.",
   "license": "MIT",
