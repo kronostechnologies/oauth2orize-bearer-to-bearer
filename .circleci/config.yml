@@ -6,7 +6,7 @@ aliases:
 jobs:
   yarn_test:
     docker:
-    - image: node:9
+    - image: node:10
     steps:
     - checkout
     - restore_cache:
