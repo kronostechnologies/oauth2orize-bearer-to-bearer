@@ -1,19 +1,22 @@
-function Request() {
+/* eslint-disable no-underscore-dangle,max-classes-per-file */
+class Request {
 }
 
-function Response() {
-	this._headers = {};
-	this._data = '';
+class Response {
+    constructor() {
+        this._headers = {};
+        this._data = '';
+    }
+
+    setHeader(name, value) {
+        this._headers[name] = value;
+    }
+
+    // eslint-disable-next-line no-unused-vars
+    end(data, encoding) {
+        this._data += data;
+        if (this.done) { this.done(); }
+    }
 }
 
-Response.prototype.setHeade
-r = function(name, value) {
-	this._headers[name] = value;
-};
-
-Response.prototype.end = function(data, encoding) {
-	this._data += data;
-	if (this.done) { this.done(); }
-};
-
-module.exports ={Request, Response}
+module.exports = { Request, Response };
