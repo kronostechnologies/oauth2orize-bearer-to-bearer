@@ -62,5 +62,8 @@
     "node": ">=12.0.0",
     "yarn": ">=1.5.1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "packageManager": "yarn@3.3.1"
 }
