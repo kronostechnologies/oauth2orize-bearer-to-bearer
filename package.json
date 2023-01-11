@@ -43,6 +43,7 @@
     "eslint": "^8.31.0",
     "eslint-config-airbnb": "^19.0.4",
     "mocha": "^10.2.0",
+    "mocha-junit-reporter": "2.1.0",
     "nyc": "^15.1.0",
     "sinon": "^15.0.1",
     "sinon-chai": "^3.7.0"
@@ -50,7 +51,7 @@
   "scripts": {
     "test": "mocha test",
     "test:watch": "mocha --watch test",
-    "test:coverage": "NODE_ENV=test nyc --reporter=lcov --reporter=text mocha test"
+    "test:ci": "NODE_ENV=test nyc -r clover --report-dir build/mocha/coverage mocha --reporter mocha-junit-reporter --reporter-options mochaFile=build/mocha/junit.xml --non-interactive  --no-progress test"
   },
   "engines": {
     "node": ">=12.0.0",
