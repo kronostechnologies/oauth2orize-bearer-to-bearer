@@ -6,7 +6,8 @@ function Response() {
 	this._data = '';
 }
 
-Response.prototype.setHeader = function(name, value) {
+Response.prototype.setHeade
+r = function(name, value) {
 	this._headers[name] = value;
 };
 
