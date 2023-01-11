@@ -1,0 +1,107 @@
+name: Publish
+
+on:
+  pull_request: { }
+  push:
+    branches:
+      - master
+    tags:
+      - v*.*.*
+
+jobs:
+  setup:
+    name: Setup
+    runs-on: ubuntu-latest
+    outputs:
+      is-release: ${{ steps.metadata.outputs.is-release }}
+      publishable: ${{ steps.metadata.outputs.publishable }}
+      version: ${{ steps.metadata.outputs.version }}
+      npm-tag: ${{ steps.metadata.outputs.npm-tag }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup asdf-vm
+        uses: equisoft-actions/with-asdf-vm@v1
+
+      - name : Fetch release branches
+        run : |
+          git fetch --no-tags --prune --depth=1000 origin +refs/heads/master:refs/remotes/origin/master '+refs/heads/release/*:refs/remotes/origin/release/*'
+
+      - name: Find application metadata
+        id: metadata
+        uses: equisoft-actions/nodejs-application-metadata@v1
+        with:
+          release-branch: master
+          hotfix-branch-prefix: release/
+
+      - name: Install NPM dependencies
+        uses: equisoft-actions/yarn-install@v1
+
+  mocha:
+    name: Mocha
+    needs:
+      - setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup asdf-vm
+        uses: equisoft-actions/with-asdf-vm@v1
+
+      - name: Install NPM dependencies
+        uses: equisoft-actions/yarn-install@v1
+
+      - name: Run Mocha
+        uses: equisoft-actions/yarn-mocha@v1
+        with:
+          task-name: 'test:ci'
+
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    needs:
+      - setup
+      - mocha
+
+    if: ${{ needs.setup.outputs.publishable == 'true' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup asdf-vm
+        uses: equisoft-actions/with-asdf-vm@v1
+
+      - name: Install NPM dependencies
+        uses: equisoft-actions/yarn-install@v1
+
+      - name: Update package version
+        env:
+          VERSION: ${{ needs.setup.outputs.version }}
+        run: |
+          contents="$(jq ".version = \"${VERSION}\"" ./package.json)" && echo "${contents}" > ./package.json
+
+      - name: Publish to npmjs
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TAG: ${{ needs.setup.outputs.npm-tag }}
+        run: |
+          echo -e "npmRegistries: \n  //registry.yarnpkg.com:\n    npmAlwaysAuth: true\n    npmAuthToken: ${NPM_TOKEN}" > ~/.yarnrc.yml
+          yarn npm publish --tag "${NPM_TAG}" --tolerate-republish
+
+  notify:
+    name: Notify
+    runs-on: ubuntu-latest
+    needs:
+      - mocha
+      - publish
+    if: failure() && github.event_name == 'push'
+    steps:
+      - name: Post workflow status
+        uses: equisoft-actions/notify-workflow-status@v1
+        with:
+          needs: ${{ toJSON(needs) }}
+          slack-webhook-url: ${{ secrets.OPS_CI_WEBHOOK_URL }}

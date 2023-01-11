@@ -1,6 +1,6 @@
 {
   "name": "@equisoft/oauth2orize-bearer-to-bearer",
-  "version": "1.1.3",
+  "version": "0.0.0",
   "description": "Bearer Token Exchange Middleware for OAuth2orize.",
   "author": "Equisoft Inc.",
   "license": "MIT",
@@ -35,25 +35,32 @@
   ],
   "main": "./lib/oauth2orize-bearer-to-bearer",
   "dependencies": {
-    "oauth2orize": "^1.11.0",
+    "oauth2orize": "^1.11.1",
     "utils-merge": "^1.0.1"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "eslint": "^6.8",
-    "eslint-config-airbnb": "^18.0.1",
-    "mocha": "^5.2.0",
-    "nyc": "^15.0",
-    "sinon": "^6.1.0",
-    "sinon-chai": "^3.2.0"
+    "@equisoft/eslint-config": "^3.0.3",
+    "@microsoft/eslint-formatter-sarif": "2.1.7",
+    "chai": "^4.3.7",
+    "eslint": "7.32.0",
+    "eslint-plugin-chai-friendly": "0.7.2",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-mocha": "10.1.0",
+    "mocha": "^10.2.0",
+    "mocha-junit-reporter": "2.1.0",
+    "nyc": "^15.1.0",
+    "sinon": "^15.0.1",
+    "sinon-chai": "^3.7.0"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test",
-    "test:watch": "./node_modules/mocha/bin/mocha --watch test",
-    "test:coverage": "./node_modules/nyc/bin/nyc.js --reporter=lcov --reporter=text ./node_modules/mocha/bin/mocha test"
+    "test": "mocha test",
+    "test:watch": "mocha --watch test",
+    "test:ci": "NODE_ENV=test nyc -r clover --report-dir build/mocha/coverage mocha --reporter mocha-junit-reporter --reporter-options mochaFile=build/mocha/junit.xml --non-interactive  --no-progress test",
+    "eslint": "eslint . --ext .js"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=12.0.0",
+    "yarn": ">=1.5.1"
   },
-  "private": false
+  "packageManager": "yarn@3.3.1"
 }
