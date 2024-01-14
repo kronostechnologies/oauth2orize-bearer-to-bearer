@@ -273,7 +273,7 @@ __metadata:
     chai: "npm:^4.3.7"
     eslint: "npm:8.56.0"
     eslint-import-resolver-node: "npm:0.3.9"
-    eslint-plugin-chai-friendly: "npm:0.7.3"
+    eslint-plugin-chai-friendly: "npm:0.7.4"
     eslint-plugin-import: "npm:2.29.1"
     eslint-plugin-mocha: "npm:10.2.0"
     mocha: "npm:^10.2.0"
@@ -925,8 +925,8 @@ __metadata:
   linkType: hard
 
 "chai@npm:^4.3.7":
-  version: 4.4.0
-  resolution: "chai@npm:4.4.0"
+  version: 4.4.1
+  resolution: "chai@npm:4.4.1"
   dependencies:
     assertion-error: "npm:^1.1.0"
     check-error: "npm:^1.0.3"
@@ -935,7 +935,7 @@ __metadata:
     loupe: "npm:^2.3.6"
     pathval: "npm:^1.1.1"
     type-detect: "npm:^4.0.8"
-  checksum: 34b6b616e77b42ae746f397ef8affaa0f3f2aa3955985de6d0faabcc9de250546e9e4f0d6bd9e59c920ff5f67937e6fa6e0f02752c0c3c43b0904e4f423cb9f7
+  checksum: 91590a8fe18bd6235dece04ccb2d5b4ecec49984b50924499bdcd7a95c02cb1fd2a689407c19bb854497bde534ef57525cfad6c7fdd2507100fd802fbc2aefbd
   languageName: node
   linkType: hard
 
@@ -1445,12 +1445,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-chai-friendly@npm:0.7.3":
-  version: 0.7.3
-  resolution: "eslint-plugin-chai-friendly@npm:0.7.3"
+"eslint-plugin-chai-friendly@npm:0.7.4":
+  version: 0.7.4
+  resolution: "eslint-plugin-chai-friendly@npm:0.7.4"
   peerDependencies:
     eslint: ">=3.0.0"
-  checksum: 6aa14b587f20a7d877e5428a5fcb28c2624ab7fd1581193cc1ae41fd60d69607fa9361e063857038b36a6d20d0ae808cd2215f9c7689c2ad59e45630c4645820
+  checksum: b161e4796de4db304042ea8da1bd467d63d22e89f74e85134c2a6755c49c53021ac2e48003af06d41b7a1b1b5e8cceacca6dc18ffaee02afd79a1c243728b8a7
   languageName: node
   linkType: hard
 
