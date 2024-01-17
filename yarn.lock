@@ -280,7 +280,7 @@ __metadata:
     mocha-junit-reporter: "npm:2.2.1"
     nyc: "npm:^15.1.0"
     oauth2orize: "npm:^1.11.1"
-    sinon: "npm:^15.0.1"
+    sinon: "npm:^17.0.0"
     sinon-chai: "npm:^3.7.0"
     utils-merge: "npm:^1.0.1"
     yargs: "npm:17.7.2"
@@ -513,15 +513,6 @@ __metadata:
   dependencies:
     type-detect: "npm:4.0.8"
   checksum: 1df9cd257942f4e4960dfb9fd339d9e97b6a3da135f3d5b8646562918e863809cb8e00268535f4f4723535d2097881c8fc03d545c414d8555183376cfc54ee84
-  languageName: node
-  linkType: hard
-
-"@sinonjs/fake-timers@npm:^10.3.0":
-  version: 10.3.0
-  resolution: "@sinonjs/fake-timers@npm:10.3.0"
-  dependencies:
-    "@sinonjs/commons": "npm:^3.0.0"
-  checksum: 2e2fb6cc57f227912814085b7b01fede050cd4746ea8d49a1e44d5a0e56a804663b0340ae2f11af7559ea9bf4d087a11f2f646197a660ea3cb04e19efc04aa63
   languageName: node
   linkType: hard
 
@@ -3013,7 +3004,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nise@npm:^5.1.4":
+"nise@npm:^5.1.5":
   version: 5.1.7
   resolution: "nise@npm:5.1.7"
   dependencies:
@@ -3707,17 +3698,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sinon@npm:^15.0.1":
-  version: 15.2.0
-  resolution: "sinon@npm:15.2.0"
+"sinon@npm:^17.0.0":
+  version: 17.0.1
+  resolution: "sinon@npm:17.0.1"
   dependencies:
     "@sinonjs/commons": "npm:^3.0.0"
-    "@sinonjs/fake-timers": "npm:^10.3.0"
+    "@sinonjs/fake-timers": "npm:^11.2.2"
     "@sinonjs/samsam": "npm:^8.0.0"
     diff: "npm:^5.1.0"
-    nise: "npm:^5.1.4"
+    nise: "npm:^5.1.5"
     supports-color: "npm:^7.2.0"
-  checksum: c5eff6020f3cd7ffaed536fa3cd57428555e30d0f0892414304c7531e7355574d7162e62725b10d0f6bccf6f6e9fd33ecc5a8624080c2b6029a324e209df0f2b
+  checksum: 63e678bd58a959ebf69ddadb5410e9c31bd161b848b9dbec5f34f7e1485a8681810cd27d37bde072b68915b41b498f30bb5fb890c73e7a51dc281d1b1d573cfb
   languageName: node
   linkType: hard
 
