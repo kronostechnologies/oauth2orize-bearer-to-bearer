@@ -20,10 +20,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup asdf-vm
-        uses: equisoft-actions/with-asdf-vm@v1
+        uses: equisoft-actions/with-asdf-vm@v2
 
       - name : Fetch release branches
         run : |
@@ -46,10 +46,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup asdf-vm
-        uses: equisoft-actions/with-asdf-vm@v1
+        uses: equisoft-actions/with-asdf-vm@v2
 
       - name: Install NPM dependencies
         uses: equisoft-actions/yarn-install@v1
@@ -65,10 +65,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup asdf-vm
-        uses: equisoft-actions/with-asdf-vm@v1
+        uses: equisoft-actions/with-asdf-vm@v2
 
       - name: Install NPM dependencies
         uses: equisoft-actions/yarn-install@v1
@@ -88,10 +88,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup asdf-vm
-        uses: equisoft-actions/with-asdf-vm@v1
+        uses: equisoft-actions/with-asdf-vm@v2
 
       - name: Install NPM dependencies
         uses: equisoft-actions/yarn-install@v1
