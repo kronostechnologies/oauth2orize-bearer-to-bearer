@@ -275,7 +275,7 @@ __metadata:
     eslint-import-resolver-node: "npm:0.3.9"
     eslint-plugin-chai-friendly: "npm:0.7.4"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-mocha: "npm:10.3.0"
+    eslint-plugin-mocha: "npm:10.4.1"
     mocha: "npm:^10.2.0"
     mocha-junit-reporter: "npm:2.2.1"
     nyc: "npm:^15.1.0"
@@ -1524,15 +1524,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-mocha@npm:10.3.0":
-  version: 10.3.0
-  resolution: "eslint-plugin-mocha@npm:10.3.0"
+"eslint-plugin-mocha@npm:10.4.1":
+  version: 10.4.1
+  resolution: "eslint-plugin-mocha@npm:10.4.1"
   dependencies:
     eslint-utils: "npm:^3.0.0"
+    globals: "npm:^13.24.0"
     rambda: "npm:^7.4.0"
   peerDependencies:
     eslint: ">=7.0.0"
-  checksum: 10c0/33f46c73dc89dec02b586045875d4e4b74857e96c0a8dcf6071b033bb91bbce30875179732008a5158eea5acd7eb633f59e5f9509b045bd5856cbed67f1aada9
+  checksum: 10c0/7cfe0db2bf19bb02d568bc6a7adb352776e55912f730af8a49dd7e061c753bb77b7009a183ab89d70b516d28a486c8484beb0d207c9ef63b735273dd885a9ccc
   languageName: node
   linkType: hard
 
@@ -2010,7 +2011,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^13.19.0":
+"globals@npm:^13.19.0, globals@npm:^13.24.0":
   version: 13.24.0
   resolution: "globals@npm:13.24.0"
   dependencies:
