@@ -41,7 +41,7 @@
   "devDependencies": {
     "@equisoft/eslint-config": "3.0.6",
     "@microsoft/eslint-formatter-sarif": "3.1.0",
-    "chai": "^4.3.7",
+    "chai": "^5.0.0",
     "eslint": "8.57.0",
     "eslint-import-resolver-node": "0.3.9",
     "eslint-plugin-chai-friendly": "1.0.0",
