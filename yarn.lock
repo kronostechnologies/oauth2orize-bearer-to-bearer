@@ -270,9 +270,9 @@ __metadata:
     chai: "npm:^4.3.7"
     eslint: "npm:8.57.0"
     eslint-import-resolver-node: "npm:0.3.9"
-    eslint-plugin-chai-friendly: "npm:1.0.0"
+    eslint-plugin-chai-friendly: "npm:1.0.1"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-mocha: "npm:10.4.3"
+    eslint-plugin-mocha: "npm:10.5.0"
     mocha: "npm:^10.2.0"
     mocha-junit-reporter: "npm:2.2.1"
     nyc: "npm:^17.0.0"
@@ -929,8 +929,8 @@ __metadata:
   linkType: hard
 
 "chai@npm:^4.3.7":
-  version: 4.4.1
-  resolution: "chai@npm:4.4.1"
+  version: 4.5.0
+  resolution: "chai@npm:4.5.0"
   dependencies:
     assertion-error: "npm:^1.1.0"
     check-error: "npm:^1.0.3"
@@ -938,8 +938,8 @@ __metadata:
     get-func-name: "npm:^2.0.2"
     loupe: "npm:^2.3.6"
     pathval: "npm:^1.1.1"
-    type-detect: "npm:^4.0.8"
-  checksum: 10c0/91590a8fe18bd6235dece04ccb2d5b4ecec49984b50924499bdcd7a95c02cb1fd2a689407c19bb854497bde534ef57525cfad6c7fdd2507100fd802fbc2aefbd
+    type-detect: "npm:^4.1.0"
+  checksum: 10c0/b8cb596bd1aece1aec659e41a6e479290c7d9bee5b3ad63d2898ad230064e5b47889a3bc367b20100a0853b62e026e2dc514acf25a3c9385f936aa3614d4ab4d
   languageName: node
   linkType: hard
 
@@ -1507,12 +1507,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-chai-friendly@npm:1.0.0":
-  version: 1.0.0
-  resolution: "eslint-plugin-chai-friendly@npm:1.0.0"
+"eslint-plugin-chai-friendly@npm:1.0.1":
+  version: 1.0.1
+  resolution: "eslint-plugin-chai-friendly@npm:1.0.1"
   peerDependencies:
     eslint: ">=3.0.0"
-  checksum: 10c0/80cded00860a28cd35a6d63ef96148b787aa703c0a9fe788c5d2ec732ba3acea19da9aab09b9337b26a84a97e3e318beadc2897fac14163a87bc870a0b5c3d93
+  checksum: 10c0/5940a2cf02cf5ee217856b17778464773be79e0b1f4cc4278c4d3a06cf26f160187732c33c7fcf6ea502f23ee95178bdda900c8c21585ccc569e160c5aab9804
   languageName: node
   linkType: hard
 
@@ -1543,16 +1543,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-mocha@npm:10.4.3":
-  version: 10.4.3
-  resolution: "eslint-plugin-mocha@npm:10.4.3"
+"eslint-plugin-mocha@npm:10.5.0":
+  version: 10.5.0
+  resolution: "eslint-plugin-mocha@npm:10.5.0"
   dependencies:
     eslint-utils: "npm:^3.0.0"
     globals: "npm:^13.24.0"
     rambda: "npm:^7.4.0"
   peerDependencies:
     eslint: ">=7.0.0"
-  checksum: 10c0/4161132800363a2c9bbb89a77ac8a1055100b8882530ff06e4067c3c5d2b30af974e09a1b079a96eb696d8ec44d4a9ed56bdc3c03359149d4448baa38395463b
+  checksum: 10c0/49b5d3a9df038048bd4483f4d4c3b9581eec74309e197abf202376fe3d3a07812dd753a917c83fa89028f89d74be321303dc4917387e9a67450649f0e3a1ffe9
   languageName: node
   linkType: hard
 
@@ -3006,8 +3006,8 @@ __metadata:
   linkType: hard
 
 "mocha@npm:^10.2.0":
-  version: 10.6.0
-  resolution: "mocha@npm:10.6.0"
+  version: 10.7.0
+  resolution: "mocha@npm:10.7.0"
   dependencies:
     ansi-colors: "npm:^4.1.3"
     browser-stdout: "npm:^1.3.1"
@@ -3032,7 +3032,7 @@ __metadata:
   bin:
     _mocha: bin/_mocha
     mocha: bin/mocha.js
-  checksum: 10c0/30b2f810014af6b5701563c6ee6ee78708dcfefc1551801c70018682bc6ca9327a6a27e93c101905a355d130a1ffe1f990975d51459c289bfcb72726ea5f7a50
+  checksum: 10c0/4d9e04fffa66e147e6250561077fcae1d7220bebba98e5649742e2e11b1c432ce9ab3c20fc27fb7cbd2be533b9a2843d47130aa54570047be698e157add02961
   languageName: node
   linkType: hard
 
@@ -4069,6 +4069,13 @@ __metadata:
   version: 4.0.8
   resolution: "type-detect@npm:4.0.8"
   checksum: 10c0/8fb9a51d3f365a7de84ab7f73b653534b61b622aa6800aecdb0f1095a4a646d3f5eb295322127b6573db7982afcd40ab492d038cf825a42093a58b1e1353e0bd
+  languageName: node
+  linkType: hard
+
+"type-detect@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "type-detect@npm:4.1.0"
+  checksum: 10c0/df8157ca3f5d311edc22885abc134e18ff8ffbc93d6a9848af5b682730ca6a5a44499259750197250479c5331a8a75b5537529df5ec410622041650a7f293e2a
   languageName: node
   linkType: hard
 
