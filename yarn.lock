@@ -205,9 +205,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@equisoft/eslint-config@npm:3.0.6":
-  version: 3.0.6
-  resolution: "@equisoft/eslint-config@npm:3.0.6"
+"@equisoft/eslint-config@npm:3.0.7":
+  version: 3.0.7
+  resolution: "@equisoft/eslint-config@npm:3.0.7"
   dependencies:
     eslint-config-airbnb-base: "npm:^15.0.0"
   peerDependencies:
@@ -218,7 +218,7 @@ __metadata:
     yargs: ^17
   bin:
     eslint: eslint.js
-  checksum: 10c0/788cce0d52f8e1cfdc77a0a79402a6e00c0d5676ce0343ad91c7e3f375ec6b9713d10bcd1e18001205d98987547660c2edc910a273e627934b68c7dfa64719c7
+  checksum: 10c0/bacef3606db79685a7ecfe25b6156077f78c3192c17306cedc4dec173986397ad8b2c691495c882fdb3a7b8f75c18e3f5b8c374cab364ca927012ed61415d08f
   languageName: node
   linkType: hard
 
@@ -226,7 +226,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@equisoft/oauth2orize-bearer-to-bearer@workspace:."
   dependencies:
-    "@equisoft/eslint-config": "npm:3.0.6"
+    "@equisoft/eslint-config": "npm:3.0.7"
     "@microsoft/eslint-formatter-sarif": "npm:3.1.0"
     chai: "npm:^4.3.7"
     eslint: "npm:8.57.0"
