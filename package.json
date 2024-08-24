@@ -39,7 +39,7 @@
     "utils-merge": "^1.0.1"
   },
   "devDependencies": {
-    "@equisoft/eslint-config": "3.0.6",
+    "@equisoft/eslint-config": "3.0.7",
     "@microsoft/eslint-formatter-sarif": "3.1.0",
     "chai": "^4.3.7",
     "eslint": "8.57.0",
@@ -68,5 +68,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@4.4.0"
+  "packageManager": "yarn@4.4.1"
 }
